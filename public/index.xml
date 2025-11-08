@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>lwcas</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on lwcas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>lwcasgc@gmail.com (lwcas)</managingEditor>
+    <webMaster>lwcasgc@gmail.com (lwcas)</webMaster>
+    <copyright>lwcas</copyright>
+    <lastBuildDate>Fri, 11 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;contact&#34;&gt;contact&lt;/h1&gt;&#xA;&lt;p&gt;website: nothing&lt;/p&gt;&#xA;&lt;p&gt;learn more and contribute on &lt;a href=&#34;https://github.com/lwcasgc/&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="contact">contact</h1>
+<p>website: nothing</p>
+<p>learn more and contribute on <a href="https://github.com/lwcasgc/">github</a>.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>blog post</title>
+      <link>http://localhost:1313/blog/blog_post/</link>
+      <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
+      <guid>http://localhost:1313/blog/blog_post/</guid>
+      <description>&lt;p&gt;my page is cool&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>my page is cool</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
