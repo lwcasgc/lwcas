@@ -10,10 +10,10 @@
   </url><url>
     <loc>https://example.com/contact/</loc>
   </url><url>
-    <loc>https://example.com/blog/blog_post/</loc>
+    <loc>https://example.com/tags/rust/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/post/</loc>
+    <loc>https://example.com/blog/rust_borrow/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/</loc>

@@ -12,12 +12,101 @@
     <lastBuildDate>Fri, 11 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blog post</title>
-      <link>https://example.com/blog/blog_post/</link>
+      <title>rust sh*t i need to save #1: borrow</title>
+      <link>https://example.com/blog/rust_borrow/</link>
       <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>https://example.com/blog/blog_post/</guid>
-      <description>&lt;p&gt;my page is cool&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>my page is cool</p>
+      <guid>https://example.com/blog/rust_borrow/</guid>
+      <description>&lt;h1 id=&#34;what-is-borrow-in-rust&#34;&gt;what is &amp;ldquo;borrow&amp;rdquo; in rust?&lt;/h1&gt;&#xA;&lt;p&gt;borrow in rust is a way to use a value without taking ownership of it. instead of moving a value from one place to another, you can &amp;ldquo;borrow&amp;rdquo; it using references. this helps rust ensure memory safety without needing a garbage collector.&lt;/p&gt;&#xA;&lt;p&gt;imagine you and a friend share a laptop with a draft document:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;owner:&lt;/strong&gt; you own the laptop and the sole editable copy of the draft.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;immutable borrow (viewing):&lt;/strong&gt; you give your friend a read-only copy or open the file in &amp;ldquo;view only&amp;rdquo; mode — multiple friends can view the draft at the same time, nobody can change it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;mutable borrow (editing):&lt;/strong&gt; you hand the laptop to one friend or grant exclusive edit access — that friend can modify the draft, but while they have edit access you (and others) cannot edit it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;lifetimes:&lt;/strong&gt; the borrow lasts while the friend has the laptop or edit session; when they finish and return it, you regain full access.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;the result: many memory errors are caught before the program runs, so code is safer without needing a garbage collector.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="what-is-borrow-in-rust">what is &ldquo;borrow&rdquo; in rust?</h1>
+<p>borrow in rust is a way to use a value without taking ownership of it. instead of moving a value from one place to another, you can &ldquo;borrow&rdquo; it using references. this helps rust ensure memory safety without needing a garbage collector.</p>
+<p>imagine you and a friend share a laptop with a draft document:</p>
+<ul>
+<li><strong>owner:</strong> you own the laptop and the sole editable copy of the draft.</li>
+<li><strong>immutable borrow (viewing):</strong> you give your friend a read-only copy or open the file in &ldquo;view only&rdquo; mode — multiple friends can view the draft at the same time, nobody can change it.</li>
+<li><strong>mutable borrow (editing):</strong> you hand the laptop to one friend or grant exclusive edit access — that friend can modify the draft, but while they have edit access you (and others) cannot edit it.</li>
+<li><strong>lifetimes:</strong> the borrow lasts while the friend has the laptop or edit session; when they finish and return it, you regain full access.</li>
+</ul>
+<p>the result: many memory errors are caught before the program runs, so code is safer without needing a garbage collector.</p>
+<h2 id="how-it-works-in-practice">how it works in practice</h2>
+<ul>
+<li>immutable borrow (reading): you borrow only to read. in rust this is <code>&amp;</code>.</li>
+<li>mutable borrow (changing): you borrow to modify. in rust this is <code>&amp;mut</code>.</li>
+</ul>
+<p>immutable borrow:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">laptop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from</span><span class="p">(</span><span class="s">&#34;draft document&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// you own the laptop with the draft
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="kd">let</span><span class="w"> </span><span class="n">viewer1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">laptop</span><span class="p">;</span><span class="w"> </span><span class="c1">// friend1 opens in &#34;view only&#34; mode
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"></span><span class="kd">let</span><span class="w"> </span><span class="n">viewer2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">laptop</span><span class="p">;</span><span class="w"> </span><span class="c1">// friend2 also views at the same time
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">viewer1</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="w"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">viewer2</span><span class="p">);</span></span></span></code></pre></div><p>mutable borrow:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">laptop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="fm">vec!</span><span class="p">[</span><span class="s">&#34;intro&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">(),</span><span class="w"> </span><span class="s">&#34;body&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">()];</span><span class="w"> </span><span class="c1">// owner of the document parts
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="kd">let</span><span class="w"> </span><span class="n">editor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">laptop</span><span class="p">;</span><span class="w"> </span><span class="c1">// one friend gets exclusive edit access
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"></span><span class="n">editor</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="s">&#34;conclusion&#34;</span><span class="p">.</span><span class="n">to_string</span><span class="p">());</span><span class="w"> </span><span class="c1">// friend edits the document
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{:?}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">editor</span><span class="p">);</span></span></span></code></pre></div><p>more abstract &amp;mut example showing immediate update and scope:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">laptop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from</span><span class="p">(</span><span class="s">&#34;raft v1&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// owner
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">editor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">laptop</span><span class="p">;</span><span class="w"> </span><span class="c1">// exclusive edit session starts
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">editor</span><span class="p">.</span><span class="n">push_str</span><span class="p">(</span><span class="s">&#34; — updated&#34;</span><span class="p">);</span><span class="w"> </span><span class="c1">// changes happen immediately on the laptop
+</span></span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="c1"></span><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">editor</span><span class="p">);</span><span class="w"> </span><span class="c1">// prints &#34;draft v1 — updated&#34;
+</span></span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="c1"></span><span class="p">}</span><span class="w"> </span><span class="c1">// editor goes out of scope here
+</span></span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="c1"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">laptop</span><span class="p">);</span><span class="w"> </span><span class="c1">// prints &#34;draft v1 — updated&#34; — owner can access again
+</span></span></span></code></pre></div><p>example that will not compile:</p>
+
+
+
+
+
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="ln">1</span><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">laptop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span>::<span class="n">from</span><span class="p">(</span><span class="s">&#34;draft v1&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">editor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="k">mut</span><span class="w"> </span><span class="n">laptop</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="c1">// println!(&#34;{}&#34;, laptop); // error: cannot borrow `laptop` as immutable while `editor` (a mutable borrow) exists
+</span></span></span></code></pre></div><h2 id="why-these-rules-exist">why these rules exist</h2>
+<p>these rules prevent common mistakes like using something that was already removed or modifying something at the same time (which can cause unexpected behavior). they help rust guarantee <strong>memory safety</strong> at compile time.</p>
+<p><strong>memory safety</strong> means a program can&rsquo;t read or write memory it shouldn&rsquo;t. this prevents common bugs like:</p>
+<ul>
+<li>
+<p><strong>use-after-free</strong>: reading data after it was dropped</p>
+<ul>
+<li>can cause undefined behavior: crashes, corrupted memory, or wrong values</li>
+<li>security risk: may allow attackers to execute code or disclose sensitive data</li>
+<li>typically timing-dependent and hard to reproduce, making bugs elusive</li>
+</ul>
+</li>
+<li>
+<p><strong>double-free</strong>: freeing the same memory twice</p>
+<ul>
+<li>leads to heap/allocator corruption and undefined behavior, often crashing the program</li>
+<li>can corrupt allocator metadata so future allocations return invalid pointers</li>
+<li>a common vector for exploitation (control-flow hijack or arbitrary code execution)</li>
+</ul>
+</li>
+<li>
+<p><strong>data races</strong>: two threads changing the same data at once</p>
+<ul>
+<li>causes nondeterministic behavior, lost updates, and inconsistent reads (corrupted state)
+<ul>
+<li>can produce crashes, deadlocks, or subtle logic errors that are hard to reproduce</li>
+<li>may break program invariants and create security issues when sensitive data is involved</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="extras">extras</h2>
+<p>garbage collector: a garbage collector (gc) is a runtime component that automatically detects and reclaims memory a program no longer uses, so developers don&rsquo;t have to manually free memory. this simplifies development but adds runtime overhead, potential pause times, and less predictable performance. rust instead provides deterministic, compile-time memory safety via ownership, borrowing, and lifetimes, dropping values at well-defined points without a gc.</p>
 ]]></content:encoded>
     </item>
   </channel>
