@@ -6,6 +6,8 @@ weight = 20
 
 # contact
 
-website: nothing
+discord: lwcas
 
-learn more and contribute on [github](https://github.com/lwcasgc/).
+email: lwcasgc@gmail.com
+
+github: https://github.com/lwcasgc/

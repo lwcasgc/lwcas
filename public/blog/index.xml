@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>blog on lwcas</title>
-    <link>https://example.com/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in blog on lwcas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
@@ -10,12 +10,12 @@
     <webMaster>lwcasgc@gmail.com (lwcas)</webMaster>
     <copyright>lwcas</copyright>
     <lastBuildDate>Fri, 11 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>rust sh*t i need to save #1: borrow</title>
-      <link>https://example.com/blog/rust_borrow/</link>
+      <title>#1: rust borrow</title>
+      <link>http://localhost:1313/blog/rust_borrow/</link>
       <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>https://example.com/blog/rust_borrow/</guid>
+      <guid>http://localhost:1313/blog/rust_borrow/</guid>
       <description>&lt;h1 id=&#34;what-is-borrow-in-rust&#34;&gt;what is &amp;ldquo;borrow&amp;rdquo; in rust?&lt;/h1&gt;&#xA;&lt;p&gt;borrow in rust is a way to use a value without taking ownership of it. instead of moving a value from one place to another, you can &amp;ldquo;borrow&amp;rdquo; it using references. this helps rust ensure memory safety without needing a garbage collector.&lt;/p&gt;&#xA;&lt;p&gt;imagine you and a friend share a laptop with a draft document:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;owner:&lt;/strong&gt; you own the laptop and the sole editable copy of the draft.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;immutable borrow (viewing):&lt;/strong&gt; you give your friend a read-only copy or open the file in &amp;ldquo;view only&amp;rdquo; mode — multiple friends can view the draft at the same time, nobody can change it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;mutable borrow (editing):&lt;/strong&gt; you hand the laptop to one friend or grant exclusive edit access — that friend can modify the draft, but while they have edit access you (and others) cannot edit it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;lifetimes:&lt;/strong&gt; the borrow lasts while the friend has the laptop or edit session; when they finish and return it, you regain full access.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;the result: many memory errors are caught before the program runs, so code is safer without needing a garbage collector.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="what-is-borrow-in-rust">what is &ldquo;borrow&rdquo; in rust?</h1>
 <p>borrow in rust is a way to use a value without taking ownership of it. instead of moving a value from one place to another, you can &ldquo;borrow&rdquo; it using references. this helps rust ensure memory safety without needing a garbage collector.</p>
