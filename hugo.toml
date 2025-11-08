@@ -19,6 +19,10 @@ enableRobotsTXT = true
     # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 # Multilingual mode config. More for information about how to setup translation,
 # see https://gohugo.io/content-management/multilingual/
 [languages]
