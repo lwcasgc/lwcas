@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Multiplayer on lwcas</title>
-    <link>http://localhost:1313/tags/multiplayer/</link>
+    <link>https://example.com/tags/multiplayer/</link>
     <description>Recent content in Multiplayer on lwcas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
@@ -10,24 +10,24 @@
     <webMaster>lwcasgc@gmail.com (lwcas)</webMaster>
     <copyright>lwcas</copyright>
     <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/multiplayer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/tags/multiplayer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>#2: packets in online games</title>
-      <link>http://localhost:1313/blog/packes_in_games/</link>
+      <link>https://example.com/blog/packes_in_games/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>http://localhost:1313/blog/packes_in_games/</guid>
-      <description>&lt;h1 id=&#34;what-are-packets-in-multiplayer-games&#34;&gt;what are packets in multiplayer games?&lt;/h1&gt;&#xA;&lt;p&gt;in multiplayer games, packets are like the envelopes or messages that carry information between players&amp;rsquo; devices and the game server. they ensure that actions like moving your character, shooting, or chatting are synchronized across all players in real-time. without packets, online gaming would be impossible—everyone would be playing in their own isolated world.&lt;/p&gt;&#xA;&lt;p&gt;imagine you&amp;rsquo;re playing a team-based game with friends:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;server:&lt;/strong&gt; the central hub that knows everything happening in the game world.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;clients:&lt;/strong&gt; each player&amp;rsquo;s device, sending updates to the server and receiving updates from others.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;packets:&lt;/strong&gt; the data bundles that travel over the internet, containing things like &amp;ldquo;player x moved to position (10, 20)&amp;rdquo; or &amp;ldquo;player Yy fired a bullet.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;packets make sure everyone sees the same game state, even with network delays or losses. but if packets get lost or arrive out of order, it can cause glitches like rubber-banding or desyncs.&lt;/p&gt;</description>
+      <guid>https://example.com/blog/packes_in_games/</guid>
+      <description>&lt;h1 id=&#34;what-are-packets-in-multiplayer-games&#34;&gt;what are packets in multiplayer games?&lt;/h1&gt;&#xA;&lt;p&gt;in multiplayer games, packets are like the envelopes or messages that carry information between players&amp;rsquo; devices and the game server. they ensure that actions like moving your character, shooting, or chatting are synchronized across all players in real-time. without packets, online gaming would be impossible—everyone would be playing in their own isolated world.&lt;/p&gt;&#xA;&lt;p&gt;imagine you&amp;rsquo;re playing a team-based game with friends:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;server:&lt;/strong&gt; the central hub that knows everything happening in the game world.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;clients:&lt;/strong&gt; each player&amp;rsquo;s device, sending updates to the server and receiving updates from others.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;packets:&lt;/strong&gt; the data bundles that travel over the internet, containing things like &amp;ldquo;player x moved to position (10, 20)&amp;rdquo; or &amp;ldquo;player y fired a bullet.&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;packets make sure everyone sees the same game state, even with network delays or losses. but if packets get lost or arrive out of order, it can cause glitches like rubber-banding or desyncs.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h1 id="what-are-packets-in-multiplayer-games">what are packets in multiplayer games?</h1>
 <p>in multiplayer games, packets are like the envelopes or messages that carry information between players&rsquo; devices and the game server. they ensure that actions like moving your character, shooting, or chatting are synchronized across all players in real-time. without packets, online gaming would be impossible—everyone would be playing in their own isolated world.</p>
 <p>imagine you&rsquo;re playing a team-based game with friends:</p>
 <ul>
 <li><strong>server:</strong> the central hub that knows everything happening in the game world.</li>
 <li><strong>clients:</strong> each player&rsquo;s device, sending updates to the server and receiving updates from others.</li>
-<li><strong>packets:</strong> the data bundles that travel over the internet, containing things like &ldquo;player x moved to position (10, 20)&rdquo; or &ldquo;player Yy fired a bullet.&rdquo;</li>
+<li><strong>packets:</strong> the data bundles that travel over the internet, containing things like &ldquo;player x moved to position (10, 20)&rdquo; or &ldquo;player y fired a bullet.&rdquo;</li>
 </ul>
 <p>packets make sure everyone sees the same game state, even with network delays or losses. but if packets get lost or arrive out of order, it can cause glitches like rubber-banding or desyncs.</p>
 <h2 id="how-packets-work-in-practice">how packets work in practice</h2>
-<p>packets are sent using network protocols, mainly TCP and UDP:</p>
+<p>packets are sent using network protocols, mainly tcp and udp:</p>
 <ul>
 <li><strong>tcp (transmission control protocol):</strong> reliable but slower. it guarantees packets arrive in order and retransmits lost ones. used for important data like login info or inventory changes.</li>
 <li><strong>udp (user datagram protocol):</strong> fast but unreliable. packets might get lost, but no waiting for retransmission. used for real-time actions like movement updates.</li>

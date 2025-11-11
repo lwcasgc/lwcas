@@ -18,6 +18,8 @@ enableRobotsTXT = true
     # to people with poor eyesight. For more information about color contrast
     # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
 
 [caches]
   [caches.images]

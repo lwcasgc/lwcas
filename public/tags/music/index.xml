@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Music on lwcas</title>
+    <link>http://localhost:1313/tags/music/</link>
+    <description>Recent content in Music on lwcas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <managingEditor>lwcasgc@gmail.com (lwcas)</managingEditor>
+    <webMaster>lwcasgc@gmail.com (lwcas)</webMaster>
+    <copyright>lwcas</copyright>
+    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modjo - Lady (Hear Me Tonight)</title>
+      <link>http://localhost:1313/songs/modjo-lady-hear-me-tonight/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
+      <guid>http://localhost:1313/songs/modjo-lady-hear-me-tonight/</guid>
+      <description>&lt;h1 id=&#34;modjo---lady-hear-me-tonight&#34;&gt;modjo - lady (hear me tonight)&lt;/h1&gt;&#xA;&lt;p&gt;this is a placeholder text for the song &amp;ldquo;lady (hear me tonight)&amp;rdquo; by modjo. i really like this track, it&amp;rsquo;s got that funky vibe.&lt;/p&gt;&#xA;&lt;p&gt;placeholder: lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;lowercase only pages are underrated&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="modjo---lady-hear-me-tonight">modjo - lady (hear me tonight)</h1>
+<p>this is a placeholder text for the song &ldquo;lady (hear me tonight)&rdquo; by modjo. i really like this track, it&rsquo;s got that funky vibe.</p>
+<p>placeholder: lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><strong>lowercase only pages are underrated</strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
