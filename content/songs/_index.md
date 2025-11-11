@@ -1,8 +1,12 @@
-+++
-title = "songs"
-menu = "main"
-weight = 2
-+++
+---
+title: "songs"
+menu: "main"
+weight: 2
+cascade:
+  - type: "posts"
+    sort_by: ["date", "weight"]
+    sort_order: ["desc", "desc"]
+---
 
 # songs i like
 

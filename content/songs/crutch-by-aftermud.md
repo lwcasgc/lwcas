@@ -1,8 +1,9 @@
 +++
 author = "lwcas"
-title = "#3: crutch by aftermud"
+title = "crutch by aftermud"
 date = "2025-11-11"
 description = "discovering a local metal band"
+weight = 3
 tags = [
     "songs",
     "metal"

@@ -1,0 +1,35 @@
+body {
+  background-color: #000000;
+  color: #b0b0b0;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  color: #d0d0d0;
+}
+
+a {
+  color: #888888;
+}
+
+code {
+  background-color: #333333;
+  color: #e0e0e0;
+}
+
+pre code {
+  background-color: #333333;
+}
+
+blockquote {
+  border-left-color: #666666;
+  color: #a0a0a0;
+}
+
+textarea, input {
+  background-color: #333333;
+  color: #b0b0b0;
+}
+
+table, th, td {
+  border-color: #666666;
+}

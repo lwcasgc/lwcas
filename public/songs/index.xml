@@ -12,7 +12,7 @@
     <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/songs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>#1: lady (hear me tonight) by modjo</title>
+      <title>lady (hear me tonight) by modjo</title>
       <link>http://localhost:1313/songs/modjo-lady-hear-me-tonight/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
       <guid>http://localhost:1313/songs/modjo-lady-hear-me-tonight/</guid>
@@ -24,7 +24,7 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>#2: eyeless by slipknot</title>
+      <title>eyeless by slipknot</title>
       <link>http://localhost:1313/songs/eyeless-by-slipknot/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
       <guid>http://localhost:1313/songs/eyeless-by-slipknot/</guid>
@@ -36,7 +36,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WLubS6QOMsQ?si=g7pZIFzlq_lG-Hpa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>]]></content:encoded>
     </item>
     <item>
-      <title>#3: crutch by aftermud</title>
+      <title>crutch by aftermud</title>
       <link>http://localhost:1313/songs/crutch-by-aftermud/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
       <guid>http://localhost:1313/songs/crutch-by-aftermud/</guid>
@@ -47,15 +47,24 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Of0svrlCynY?si=wGR07pvm9PYcWvQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>]]></content:encoded>
     </item>
     <item>
-      <title>#4: acéphale by xnomadx</title>
+      <title>acéphale by xnomadx</title>
       <link>http://localhost:1313/songs/acephale-by-xnomadx/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
       <guid>http://localhost:1313/songs/acephale-by-xnomadx/</guid>
       <description>&lt;p&gt;this was one of my favorite songs for a long time. i was devastated to find out the band has ended.&lt;/p&gt;&#xA;&lt;p&gt;this song is one of the first i listened to when discovering metalcore, and it stood out with its many different melodies that are all very good, and the drumming that&amp;rsquo;s quite intense yet fun to listen to and practice. i&amp;rsquo;m not quick enough to play it yet, but it&amp;rsquo;d be a dream to be able to play it perfectly.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>this was one of my favorite songs for a long time. i was devastated to find out the band has ended.</p>
 <p>this song is one of the first i listened to when discovering metalcore, and it stood out with its many different melodies that are all very good, and the drumming that&rsquo;s quite intense yet fun to listen to and practice. i&rsquo;m not quick enough to play it yet, but it&rsquo;d be a dream to be able to play it perfectly.</p>
-<p>when i listened to it for the first time, i remember being in ecstasy with the 2:55 part because of how the tension kept increasing. i didn&rsquo;t know what to expect after that much tension, then i got surprised with a beautiful and soothing part at 3:38 that&rsquo;s engraved in my brain and will be for a long time. definitely an unforgettable song.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TfnSh5VeFHU?si=ylatz5yamu-2NOlF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>]]></content:encoded>
+    </item>
+    <item>
+      <title>now by xnomadx</title>
+      <link>http://localhost:1313/songs/now-by-xnomadx/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
+      <guid>http://localhost:1313/songs/now-by-xnomadx/</guid>
+      <description>&lt;p&gt;yet another song by this band that is among my favorites, it has the same euphoric drumming that acéphale has, but its most beautiful part at 2:00 feels way more iconic to me.&lt;/p&gt;&#xA;&lt;p&gt;i wonder if some people never got to experience how marvelous that part is simply because they weren&amp;rsquo;t interested in what leads up to it, and that also makes me wonder how many beautiful parts of songs i never listened to because i skipped them too early.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>yet another song by this band that is among my favorites, it has the same euphoric drumming that acéphale has, but its most beautiful part at 2:00 feels way more iconic to me.</p>
+<p>i wonder if some people never got to experience how marvelous that part is simply because they weren&rsquo;t interested in what leads up to it, and that also makes me wonder how many beautiful parts of songs i never listened to because i skipped them too early.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1geJmtrSl34?si=8AxR-ONVxKfwUHyH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>]]></content:encoded>
     </item>
   </channel>
 </rss>

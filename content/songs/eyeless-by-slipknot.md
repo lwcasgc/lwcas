@@ -1,8 +1,9 @@
 +++
 author = "lwcas"
-title = "#2: eyeless by slipknot"
+title = "eyeless by slipknot"
 date = "2025-11-11"
 description = "discovering slipknot's music"
+weight = 2
 tags = [
     "songs",
     "metal",

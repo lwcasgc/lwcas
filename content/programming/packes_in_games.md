@@ -1,6 +1,6 @@
 +++
 author = "lwcas"
-title = "#2: packets in online games"
+title = "packets in online games"
 date = "2025-11-10"
 description = "understanding how data travels in online multiplayer games"
 tags = [

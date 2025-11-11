@@ -1,8 +1,9 @@
 +++
 author = "lwcas"
-title = "#1: lady (hear me tonight) by modjo"
+title = "lady (hear me tonight) by modjo"
 date = "2025-11-11"
 description = "a song i like"
+weight = 1
 tags = [
     "songs",
 ]
