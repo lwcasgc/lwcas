@@ -8,6 +8,10 @@ weight = 1
 
 lwcas == lucas, it is that simple
 
-what if the insert text here
+## about me
 
-**lowercase only pages are underrated**
+hi, i'm lucas (lwcas), i'm {{< age >}} years old.
+
+i make music and code a few things here and there
+
+**i am a firm believer that lowercase only text is better**

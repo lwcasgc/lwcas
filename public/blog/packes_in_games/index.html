@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://example.com/images/favicon.png" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
 <title>#2: packets in online games | lwcas</title>
 <meta name="title" content="#2: packets in online games" />
 <meta name="description" content="understanding how data travels in online multiplayer games" />
@@ -40,9 +40,9 @@
 <meta property="og:title" content="#2: packets in online games" />
 <meta property="og:description" content="understanding how data travels in online multiplayer games" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/blog/packes_in_games/" />
+<meta property="og:url" content="http://localhost:1313/blog/packes_in_games/" />
 
-<meta property="og:image" content="https://example.com/images/social_card_bg_hu_8b1bc4d30cabd3a1.webp"/><meta property="article:section" content="blog" />
+<meta property="og:image" content="http://localhost:1313/images/social_card_bg_hu_74e193e528940a9f.webp"/><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2025-11-10T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-11-10T00:00:00+00:00" /><meta property="og:site_name" content="lwcasgc" />
 <meta property="fb:admins" content="0000000000" />
@@ -50,7 +50,7 @@
 
 
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://example.com/images/social_card_bg_hu_8b1bc4d30cabd3a1.webp"/>
+<meta name="twitter:image" content="http://localhost:1313/images/social_card_bg_hu_74e193e528940a9f.webp"/>
 <meta name="twitter:title" content="#2: packets in online games"/>
 <meta name="twitter:description" content="understanding how data travels in online multiplayer games"/>
 <meta name="twitter:site" content="@lwcasgc"/>
@@ -62,7 +62,7 @@
 <meta itemprop="dateModified" content="2025-11-10T00:00:00+00:00" />
 <meta itemprop="wordCount" content="424">
 
-<meta itemprop="image" content="https://example.com/images/social_card_bg_hu_8b1bc4d30cabd3a1.webp"/>
+<meta itemprop="image" content="http://localhost:1313/images/social_card_bg_hu_74e193e528940a9f.webp"/>
 
 
 <meta itemprop="keywords" content="networking,multiplayer,games," />
@@ -93,7 +93,7 @@
 
   <a href="/contact/">contact</a>
 
-<a href='https://example.com/index.xml'>RSS</a>
+<a href='http://localhost:1313/index.xml'>RSS</a>
 
 
 
@@ -120,11 +120,11 @@
 <ul>
 <li><strong>server:</strong> the central hub that knows everything happening in the game world.</li>
 <li><strong>clients:</strong> each player&rsquo;s device, sending updates to the server and receiving updates from others.</li>
-<li><strong>packets:</strong> the data bundles that travel over the internet, containing things like &ldquo;player x moved to position (10, 20)&rdquo; or &ldquo;player Yy fired a bullet.&rdquo;</li>
+<li><strong>packets:</strong> the data bundles that travel over the internet, containing things like &ldquo;player x moved to position (10, 20)&rdquo; or &ldquo;player y fired a bullet.&rdquo;</li>
 </ul>
 <p>packets make sure everyone sees the same game state, even with network delays or losses. but if packets get lost or arrive out of order, it can cause glitches like rubber-banding or desyncs.</p>
 <h2 id="how-packets-work-in-practice">how packets work in practice</h2>
-<p>packets are sent using network protocols, mainly TCP and UDP:</p>
+<p>packets are sent using network protocols, mainly tcp and udp:</p>
 <ul>
 <li><strong>tcp (transmission control protocol):</strong> reliable but slower. it guarantees packets arrive in order and retransmits lost ones. used for important data like login info or inventory changes.</li>
 <li><strong>udp (user datagram protocol):</strong> fast but unreliable. packets might get lost, but no waiting for retransmission. used for real-time actions like movement updates.</li>

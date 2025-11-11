@@ -1,0 +1,4 @@
+{{ $now := now }}
+{{ $age := sub $now.Year 2002 }}
+{{ if lt $now.Month 12 }}{{ $age = sub $age 1 }}{{ else if and (eq $now.Month 12) (lt $now.Day 22) }}{{ $age = sub $age 1 }}{{ end }}
+{{ $age }}

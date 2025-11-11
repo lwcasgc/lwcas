@@ -17,13 +17,13 @@ in multiplayer games, packets are like the envelopes or messages that carry info
 imagine you're playing a team-based game with friends:
 - **server:** the central hub that knows everything happening in the game world.
 - **clients:** each player's device, sending updates to the server and receiving updates from others.
-- **packets:** the data bundles that travel over the internet, containing things like "player x moved to position (10, 20)" or "player Yy fired a bullet."
+- **packets:** the data bundles that travel over the internet, containing things like "player x moved to position (10, 20)" or "player y fired a bullet."
 
 packets make sure everyone sees the same game state, even with network delays or losses. but if packets get lost or arrive out of order, it can cause glitches like rubber-banding or desyncs.
 
 ## how packets work in practice
 
-packets are sent using network protocols, mainly TCP and UDP:
+packets are sent using network protocols, mainly tcp and udp:
 - **tcp (transmission control protocol):** reliable but slower. it guarantees packets arrive in order and retransmits lost ones. used for important data like login info or inventory changes.
 - **udp (user datagram protocol):** fast but unreliable. packets might get lost, but no waiting for retransmission. used for real-time actions like movement updates.
 
