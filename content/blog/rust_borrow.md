@@ -1,7 +1,7 @@
 +++
 author = "lwcas"
 title = "#1: rust borrow"
-date = "2025-07-11"
+date = "2025-11-07"
 description = "what if i just dont ever read this again xd"
 tags = [
     "rust",
