@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on lwcas</title>
-    <link>https://example.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on lwcas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
@@ -10,44 +10,60 @@
     <webMaster>lwcasgc@gmail.com (lwcas)</webMaster>
     <copyright>lwcas</copyright>
     <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metal</title>
+      <link>http://localhost:1313/tags/metal/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
+      <guid>http://localhost:1313/tags/metal/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    <item>
+      <title>Rock</title>
+      <link>http://localhost:1313/tags/rock/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
+      <guid>http://localhost:1313/tags/rock/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
     <item>
       <title>Songs</title>
-      <link>https://example.com/tags/songs/</link>
+      <link>http://localhost:1313/tags/songs/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>https://example.com/tags/songs/</guid>
+      <guid>http://localhost:1313/tags/songs/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Games</title>
-      <link>https://example.com/tags/games/</link>
+      <link>http://localhost:1313/tags/games/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>https://example.com/tags/games/</guid>
+      <guid>http://localhost:1313/tags/games/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Multiplayer</title>
-      <link>https://example.com/tags/multiplayer/</link>
+      <link>http://localhost:1313/tags/multiplayer/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>https://example.com/tags/multiplayer/</guid>
+      <guid>http://localhost:1313/tags/multiplayer/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://example.com/tags/networking/</link>
+      <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>https://example.com/tags/networking/</guid>
+      <guid>http://localhost:1313/tags/networking/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://example.com/tags/rust/</link>
+      <link>http://localhost:1313/tags/rust/</link>
       <pubDate>Fri, 11 Jul 2025 00:00:00 +0000</pubDate><author>lwcasgc@gmail.com (lwcas)</author>
-      <guid>https://example.com/tags/rust/</guid>
+      <guid>http://localhost:1313/tags/rust/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
